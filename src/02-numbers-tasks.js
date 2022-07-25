@@ -1,6 +1,6 @@
 /* *******************************************************************************************
  *                                                                                           *
- * Please read the following tutorial before implementing tasks:                              *
+ * Plese read the following tutorial before implementing tasks:                              *
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates           *
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number   *
  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math     *
@@ -9,9 +9,9 @@
 
 
 /**
- * Returns an area of a rectangle given by width and height.
+ * Returns an area of a rectangle given by width and heigth.
  *
- * @param {number} width
+ * @param {numder} width
  * @param {number} height
  * @return {number}
  *
@@ -19,8 +19,8 @@
  *   5, 10 => 50
  *   5, 5  => 25
  */
-function getRectangleArea(/* width, height */) {
-  throw new Error('Not implemented');
+function getRectangleArea(width, height) {
+  return width * height;
 }
 
 
@@ -35,14 +35,14 @@ function getRectangleArea(/* width, height */) {
  *   3.14 => 19.729201864543903
  *   0    => 0
  */
-function getCircleCircumference(/* radius */) {
-  throw new Error('Not implemented');
+function getCicleCircumference(radius) {
+  return 2 * 3.1415926535897932384626433832795 * radius;
 }
 
 /**
  * Returns an average of two given numbers.
  *
- * @param {number} value1
+ * @param {numder} value1
  * @param {number} value2
  * @return {number}
  *
@@ -56,7 +56,7 @@ function getAverage(/* value1, value2 */) {
 }
 
 /**
- * Returns a distance between two points by cartesian coordinates.
+ * Returns a distance beetween two points by cartesian coordinates.
  *
  * @param {number} x1
  * @param {number} y1
@@ -70,8 +70,8 @@ function getAverage(/* value1, value2 */) {
  *   (0,0) (1,0)    => 1
  *   (-5,0) (10,-10) => 18.027756377319946
  */
-function getDistanceBetweenPoints(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
+function getDistanceBetweenPoints(x1, y1, x2, y2) {
+  return Math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2);
 }
 
 /**
@@ -86,8 +86,8 @@ function getDistanceBetweenPoints(/* x1, y1, x2, y2 */) {
  *   x + 8 = 0       => -8
  *   5*x = 0         => 0
  */
-function getLinearEquationRoot(/* a, b */) {
-  throw new Error('Not implemented');
+function getLinearEquationRoot(a, b) {
+  return -b / a;
 }
 
 
@@ -109,8 +109,8 @@ function getLinearEquationRoot(/* a, b */) {
  *   (0,1) (0,1)     => 0
  *   (0,1) (1,2)     => 0
  */
-function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
-  throw new Error('Not implemented');
+function getAngleBetweenVectors(x1, y1, x2, y2) {
+  return Math.abs(Math.atan2(y1, x1) - Math.atan2(y2, x2));
 }
 
 /**
@@ -125,8 +125,8 @@ function getAngleBetweenVectors(/* x1, y1, x2, y2 */) {
  *     5     => 5
  *     0     => 0
  */
-function getLastDigit(/* value */) {
-  throw new Error('Not implemented');
+function getLastDigit(value) {
+  return value % 10;
 }
 
 
@@ -141,8 +141,8 @@ function getLastDigit(/* value */) {
  *     '37'     => 37
  * '-525.5'     => -525.5
  */
-function parseNumberFromString(/* value */) {
-  throw new Error('Not implemented');
+function parseNumberFromString(value) {
+  return +value;
 }
 
 /**
@@ -158,10 +158,9 @@ function parseNumberFromString(/* value */) {
  *   3,3,3   => 5.196152422706632
  *   1,2,3   => 3.741657386773941
  */
-function getParallelepipedDiagonal(/* a, b, c */) {
-  throw new Error('Not implemented');
+function getParallelipidedDiagonal(a, b, c) {
+  return Math.sqrt(a ** 2 + b ** 2 + c ** 2);
 }
-
 
 /**
  * Returns the number rounded to specified power of 10.
@@ -180,7 +179,7 @@ function getParallelepipedDiagonal(/* a, b, c */) {
  *   1678, 2  => 1700
  *   1678, 3  => 2000
  */
-function roundToPowerOfTen(/* num, pow */) {
+function roundToPowerOfTen(/*  num, pow */) {
   throw new Error('Not implemented');
 }
 
@@ -206,7 +205,7 @@ function isPrime(/* n */) {
 }
 
 /**
- * Tries to convert value to number and returns it if conversion was successful;
+ * Tries to convert value to number and returns it if conversion was successfull;
  * otherwise returns default value passed as a second argument.
  *
  * @param {any} value
@@ -226,14 +225,14 @@ function toNumber(/* value, def */) {
 
 module.exports = {
   getRectangleArea,
-  getCircleCircumference,
+  getCicleCircumference,
   getAverage,
   getDistanceBetweenPoints,
   getLinearEquationRoot,
   getAngleBetweenVectors,
   getLastDigit,
   parseNumberFromString,
-  getParallelepipedDiagonal,
+  getParallelipidedDiagonal,
   roundToPowerOfTen,
   isPrime,
   toNumber,
